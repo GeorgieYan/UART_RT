@@ -53,7 +53,7 @@ module receiver
         shift <= 0; // set shift to 0 to avoid any shifting 
         clear_sample <= 0; // set clear sample counter to 0 to avoid reset
         inc_oversample <= 0; // set increment sample counter to 0 to avoid any increment
-        clear_bit <= 0; // set clear bit counter to 0 to avoid claring
+        clear_bit <= 0; // set clear bit counter to 0 to avoid clearing
         inc_bit <= 0; // set increment bit counter to avoid any count
         next_state <= 0; // set next state to be idle state
         case (state)
