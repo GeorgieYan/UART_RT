@@ -10,14 +10,14 @@ module top_module(
     output TxD, //transmitted data
     output [7:0] led_data, //8 bits output
     output transmit,
-    output clk_debug
+    output clk_o
     ); 
     
     wire transmit_signal; 
     assign transmit_signal = transmit;
-    assign clk_debug = clk;
+    assign clk_o = clk;
     
-    transmitter_top T3(.clk_debug(clk_debug), .btn0(btn0), .btn1(btn1), .transmit_debug(transmit_signal), .TxD_debug(TxD), .sw(sw));
-    receiver R1(.clk(clk_debug), .RxD(RxD), .reset(reset), .led_data(led_data));
+    transmitter_top T3(.clk_debug(clk_o), .btn0(btn0), .btn1(btn1), .transmit_debug(transmit_signal), .TxD_debug(TxD), .sw(sw));
+    receiver R1(.clk(clk_o), .RxD(RxD), .reset(reset), .led_data(led_data));
     
 endmodule
