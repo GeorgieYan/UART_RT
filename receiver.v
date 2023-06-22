@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 module receiver
-    #(parameter baud_rate = 9600,
+    #(parameter baud_rate = 9600, //9600 bits per second
       parameter clk_frequency = 100000000,
       parameter rec_sample = 4,
       parameter rec_bit = 10,
