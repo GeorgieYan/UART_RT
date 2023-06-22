@@ -8,7 +8,7 @@ module top_module(
     input RxD, //received data
     input reset,
     output TxD, //transmitted data
-    output [7:0] led_data, //8 bits output
+    output [7:0] led_data, //8 bits output display
     output transmit,
     output clk_o
     ); 
