@@ -2,13 +2,13 @@
 
 module top_module(
     input clk,
-    input [7:0] sw,
-    input btn0,
-    input btn1,
-    input RxD,
+    input [7:0] sw, //8 bits input
+    input btn0, //reset button
+    input btn1, //transmit button
+    input RxD, //received data
     input reset,
-    output TxD,
-    output [7:0] led_data,
+    output TxD, //transmitted data
+    output [7:0] led_data, //8 bits output
     output transmit,
     output clk_debug
     ); 
